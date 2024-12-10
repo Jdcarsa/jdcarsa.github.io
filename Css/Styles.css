@@ -1,0 +1,520 @@
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600&display=swap");
+.logo {
+  margin-top: 5px;
+  height: 20px;
+  width: 150px;
+}
+
+.menu {
+  display: flex;
+}
+.menu li {
+  display: block;
+  font-weight: 300;
+  font-size: 16px;
+  padding: 10px 25px;
+  margin: 0px 5px;
+}
+.menu li a {
+  text-decoration: none;
+  color: #fdffff;
+}
+.menu li a i {
+  margin-right: 10px;
+}
+.menu li a:hover {
+  color: rgb(231, 9, 9);
+  transition: ease-in-out 0.2s;
+}
+
+.nav-burger {
+  display: none;
+  color: #fdffff;
+  border: none;
+  font-size: 20px;
+  padding: 0 20px;
+  line-height: 60px;
+  cursor: pointer;
+}
+.nav-burger #close {
+  display: none;
+}
+
+.sec-text {
+  margin: 0 10px 0 30px;
+}
+.sec-text p {
+  width: 100%;
+  padding-bottom: 20px;
+}
+.sec-text h1 {
+  font-size: 70px;
+  font-weight: 500;
+  margin: 0;
+}
+.sec-text h2 {
+  color: #eb0303;
+  font-size: 70px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.name {
+  color: #eb0303;
+  font-family: "Clicker Script", cursive;
+  font-size: 30px;
+}
+
+.titles {
+  color: #eb0303;
+  font-family: "Clicker Script", cursive;
+  font-size: 40px;
+  text-align: center;
+}
+
+.info-profile {
+  display: grid;
+  place-items: center;
+  margin: 50px 0 0px 0px;
+  padding-top: 30px;
+  grid-template-columns: repeat(1, 1fr);
+}
+.info-profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 160px;
+  border: 3px solid #eb0303;
+}
+.info-profile .description {
+  width: 80%;
+}
+
+.btn {
+  display: inline-block;
+  background-color: rgb(231, 9, 9);
+  color: #fdffff;
+  font-size: 16px;
+  text-align: center;
+  transition: all 0.5s ease;
+  padding: 8px 5px;
+  margin: 14px 5px;
+  text-decoration: none;
+  border-radius: 10px;
+  text-align: center;
+  width: 30px;
+  height: 25px;
+}
+.btn:hover {
+  box-shadow: 0 6px 20px rgb(231, 9, 9);
+  animation: all 0.5s ease;
+  cursor: pointer;
+  text-shadow: 4px 4px 4px black;
+}
+
+.btn-download {
+  display: inline-block;
+  background-color: rgb(231, 9, 9);
+  color: #fdffff;
+  font-size: 16px;
+  text-align: center;
+  transition: all 0.5s ease;
+  padding: 8px 5px;
+  margin: 14px 5px;
+  text-decoration: none;
+  border-radius: 10px;
+  width: 150px;
+  height: 25px;
+}
+.btn-download:hover {
+  box-shadow: 0 6px 20px rgb(231, 9, 9);
+  animation: all 0.5s ease;
+  cursor: pointer;
+  text-shadow: 4px 4px 4px black;
+}
+.btn-download span {
+  display: inline-block;
+  position: relative;
+}
+.btn-download i {
+  padding: 5px 0 0 5px;
+}
+
+.skill-info {
+  display: grid;
+  width: 80%;
+  place-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 10px;
+  padding: 10px 20px;
+  gap: 20px;
+  box-shadow: 0 1px 5px #fdffff;
+  border-radius: 40px;
+}
+.skill-info img {
+  text-align: center;
+}
+.skill-info .description-skill h3 {
+  margin: 0;
+  margin-right: 10px;
+}
+.skill-info .description-skill span {
+  opacity: 0.7;
+}
+
+.title {
+  text-align: center;
+}
+.title h2 {
+  font-weight: 300;
+  margin: 10px;
+  font-size: 40px;
+}
+
+.card {
+  height: 320px;
+  width: 330px;
+  border-radius: 30px;
+  overflow: hidden;
+  text-align: center;
+  margin: 10px;
+  background: #242323;
+}
+.card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 6px 20px rgb(231, 9, 9);
+  transition: transform 0.3s ease-in-out;
+}
+.card:hover img {
+  opacity: 1;
+}
+.card img {
+  height: 130px;
+  width: 100%;
+  opacity: 0.7;
+}
+.card h4 {
+  font-weight: 500;
+  margin: 5px;
+}
+.card p {
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+.card a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #fdffff;
+  margin-left: 20px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.card a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 2px;
+  background-color: #eb0303;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+.card a:hover::before {
+  transform: scaleX(1);
+}
+
+.input-text {
+  background: rgba(245, 245, 245, 0.0901960784);
+  color: #fdffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  width: 90%;
+  height: 20px;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.message {
+  font-family: "Poppins", sans-serif;
+  width: 90%;
+  height: 100px;
+  background: rgba(245, 245, 245, 0.0901960784);
+  color: #fdffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  resize: none;
+}
+
+.btn-send {
+  position: relative;
+  left: 11px;
+  border-radius: 10px;
+  font-size: 18px;
+  border: none;
+  background-color: rgb(231, 9, 9);
+  padding: 8px 0px;
+  color: #fdffff;
+  width: 30%;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+.btn-send:hover {
+  box-shadow: 0 4px 20px rgb(231, 9, 9);
+  animation: all 0.5s ease;
+  cursor: pointer;
+  text-shadow: 4px 4px 4px black;
+}
+
+.social-net {
+  display: grid;
+  justify-items: center;
+  padding: 20px;
+}
+.social-net ul {
+  list-style: none;
+  padding: 0;
+  margin: 0px;
+}
+.social-net ul li {
+  display: inline;
+  padding: 0 5px;
+}
+.social-net ul li a {
+  text-decoration: none;
+}
+.social-net ul li a i {
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  color: #fdffff;
+  text-align: center;
+  font-size: 20px;
+  margin: 5px 14px;
+  border: 1px solid #fdffff;
+  border-radius: 50%;
+}
+.social-net ul li a i:hover {
+  transition: all ease-in-out 0.3s;
+  color: red;
+  border-color: red;
+}
+
+.credits {
+  color: #eb0303;
+  font-family: "Clicker Script", cursive;
+  color: #fdffff;
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+.contac {
+  color: #eb0303;
+  font-family: "Clicker Script", cursive;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.input {
+  width: 90%;
+  text-align: end;
+}
+.input .message-error {
+  display: none;
+  color: hsl(0deg, 97%, 60%);
+  font-size: 12px;
+}
+
+.error {
+  border: 1.5px solid hsl(0deg, 97%, 60%);
+}
+.error::placeholder {
+  color: hsl(0deg, 97%, 60%);
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  background: #2C2C2C;
+  background: linear-gradient(90deg, rgb(29, 26, 26) 0%, rgb(19, 18, 18) 100%);
+}
+html::-webkit-scrollbar {
+  background: #2C2C2C;
+  background: linear-gradient(90deg, rgb(29, 26, 26) 0%, rgb(0, 0, 0) 100%);
+  width: 6px;
+  height: 6px;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: #eb0303;
+  border-radius: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #fdffff;
+  box-sizing: border-box;
+}
+
+nav {
+  display: block;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 0 100px;
+  background: #242323;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding-top: 10px;
+}
+
+.container-1 {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+}
+.container-1 img {
+  margin: 20px;
+  width: 400px;
+  height: 300px;
+}
+
+/* sass --watch Sass/Styles.scss Css/Styles.css*/
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+  padding: 10px;
+}
+
+.proyects {
+  margin: 40px 0;
+  margin-top: 80px;
+  width: 100%;
+}
+
+.cards-proyects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  place-items: center;
+  justify-content: center;
+}
+
+.contac-me {
+  display: grid;
+  gap: 20px;
+  width: 50%;
+}
+.contac-me h3 {
+  color: #eb0303;
+  font-family: "Clicker Script", cursive;
+  font-size: 35px;
+  margin: 5px;
+}
+.contac-me form {
+  display: grid;
+  gap: 20px;
+}
+
+footer {
+  width: 90%;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 850px) {
+  nav {
+    width: calc(100% - 200px);
+  }
+  .menu {
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    background: #242323;
+    top: 50px;
+    width: 100%;
+    padding: 20px 0;
+    top: -100%;
+    left: 0;
+    border: 0.5px solid rgba(17, 17, 17, 0.6509803922);
+  }
+  .menu li {
+    margin-right: 0;
+  }
+  .nav-burger {
+    display: block;
+    position: absolute;
+    right: 0;
+  }
+  .nav-burger :focus:not(:focus-visible) {
+    outline: none;
+  }
+  .menu_visible {
+    top: 44px;
+    z-index: 100;
+  }
+  .logo {
+    position: absolute;
+    left: 10px;
+    top: 18px;
+  }
+  .info-profile .name {
+    display: block;
+  }
+  .container-1 {
+    flex-direction: column;
+  }
+  .container-1 img {
+    width: 300px;
+    height: 300px;
+  }
+  .contac-me {
+    width: 90%;
+  }
+  .contac-me form {
+    place-items: center;
+  }
+  .skills .description-skill {
+    text-align: center;
+  }
+  .card {
+    width: 260px;
+  }
+  .card div {
+    display: flex;
+  }
+  .card .btn-card::before {
+    position: absolute;
+    left: 18px;
+    width: 70%;
+  }
+  .btn-send {
+    width: 90%;
+  }
+  .credits {
+    font-size: 20px;
+  }
+  .social-net {
+    flex-direction: column;
+  }
+  .social-net ul li {
+    padding: 0;
+    width: 40px;
+  }
+  .social-net ul li a i {
+    margin: 5px;
+  }
+}
+
+/*# sourceMappingURL=Styles.css.map */
