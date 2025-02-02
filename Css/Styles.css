@@ -491,9 +491,11 @@ footer {
   .card {
     width: 260px;
   }
-  .card div {
-    display: flex;
+
+  .card p{
+    margin-bottom: 5px;
   }
+
   .card .btn-card::before {
     position: absolute;
     left: 18px;

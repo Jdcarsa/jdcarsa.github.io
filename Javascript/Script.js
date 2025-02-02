@@ -126,7 +126,7 @@ function validateEmail(correo , messageFieldEmpty, messageInvalidData) {
     if(regex.test(correo)){
         emailInput.classList.remove("error");
         return true;
-    } else if(emailInput.value.length == 0){
+    } else if(emailInput.value.length === 0){
         return validateInputs(emailInput, messageFieldEmpty, messageInvalidData)
     } 
     else{
