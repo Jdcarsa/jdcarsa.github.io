@@ -1,251 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/icon-web.png" type="image/x-icon">
-    <!--=======CSS FILES ========-->
-    <link rel="stylesheet" href="Css/Styles.css">
-    <title>Portafolio</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/icon-web.png" type="image/x-icon" />
+    <link rel="stylesheet" href="Css/Styles.css" />
+    <title>Portafolio | Jesús Cárdenas</title>
 </head>
-<body>
-    <!--=======Header Start ========-->
+<body data-theme="dark">
     <header>
-        <!--=======Nav Start ========-->
         <nav>
-            <div>
-                <img  class="logo" src="img/Logo.png" alt="picture" />
-            </div>
-            <ul class="menu">
-                <li>
-                    <a href="#section-profile">
-                    <i class="fa-solid fa-house"></i>Inicio</a>
-                    </li>
-                <li>
-                    <a href="#section-about">
-                    <i class="fa-solid fa-user"></i>Acerca de mi</a>
-                </li>
-                <li>
-                    <a href="#section-proyects">
-                    <i class="fa-solid fa-briefcase"></i>Proyectos</a>
-                </li>
-                <li>
-                    <a href="#section-contact">
-                    <i class="fa-solid fa-comment"></i>Contacto</a>
-                </li>
+            <ul class="menu" id="menu">
+                <li><a href="#inicio" data-i18n="nav_home">Inicio</a></li>
+                <li><a href="#habilidades" data-i18n="nav_skills">Habilidades</a></li>
+                <li><a href="#laboral" data-i18n="nav_experience">Experiencia</a></li>
+                <li><a href="#contacto" data-i18n="nav_contact">Contacto</a></li>
             </ul>
-            <span class="nav-burger">
-                <i  id="open" class="fa-solid fa-bars"></i>
-                <i id="close" class="fa-solid fa-xmark"></i>
-            </span>
-            
+            <div class="nav-actions">
+                <button id="theme-toggle" class="control-btn" type="button">
+                    <i class="fa-solid fa-circle-half-stroke"></i>
+                    <span id="theme-label">Modo claro</span>
+                </button>
+                <button id="lang-toggle" class="control-btn" type="button">EN</button>
+                <button class="nav-burger" id="nav-toggle" type="button" aria-label="Abrir menú">
+                    <i id="open" class="fa-solid fa-bars"></i>
+                    <i id="close" class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
         </nav>
-        <!--=======Nav End ========-->
     </header>
-    <!--=======Header End ========-->
 
-    <!--=======Main Profile Start ========-->
-    <section id="section-profile" class="profile">
-        <div class="info-profile">
+    <main>
+        <section id="inicio" class="hero container">
             <div>
-                <h2>
-                    Hola, soy <span class="name">Jesus Cardenas </span>
-                </h2>
-            </div>
-            <div>
-                <a class="btn-download" href="img/resume.png" download="Download">
-                    <span>Descargar CV</span>
-                    <i class="fa-solid fa-download"></i>
-                </a>
-                <a class="btn" href="https://github.com/Jdcarsa">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-    <!--=======Main Profile End ========-->
-
-    <!--=======About Start ========-->
-    <section id="section-about" class="about-me">
-        <div class="container">
-            <section class="container-1">
-                <div class="sec-text">
-                    <h2 class="name">Sobre mi</h2>
-                    <p>
-                        Soy estudiante de ingeniería de sistemas de decimo semestre, 
-                        me gusta el desarrollo backend y me he inclinado por esa rama, aunque también tengo conocimientos básicos 
-                        por el lado frontend. Por el momento no tengo experiencia laboral, sin embargo, 
-                        a lo largo de mi carrera universitaria he participado en proyectos académicos que me han permitido desarrollar 
-                        habilidades para la industria. 
-                    </p>
+                <p class="tag">Full-Stack Developer</p>
+                <h1 data-i18n="hero_title">Hola, soy <span>Jesús David Cárdenas</span></h1>
+                <p class="hero-text" data-i18n="hero_desc">
+                    Ingeniero de Sistemas y Desarrollador Full-Stack con experiencia real construyendo soluciones web con .NET, React y Spring Boot. He trabajado en automatización de procesos con Python, integración de APIs REST y despliegues en AWS, además de pruebas de despliegue con Docker.
+                </p>
+                <div class="hero-buttons">
+                    <a id="cv-link" class="btn btn-primary" href="https://drive.google.com/file/d/1m-7a67w28SmueBp8Srs12DKioRGiJ2mE/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-download"></i>
+                        <span data-i18n="btn_cv">Descargar CV</span>
+                    </a>
+                    <a class="btn" href="https://github.com/Jdcarsa" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                    <a class="btn" href="https://www.linkedin.com/in/jesus-david-cardenas-sandoval-a368652b6/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin"></i> LinkedIn
+                    </a>
                 </div>
-                <img src="img/programmer-desing.svg" alt="Picture-about"/>
-            </section>
-        </div>
-    </section>
-    <!--=======About End ========-->
+            </div>
+            <div class="hero-image">
+                <img src="img/programmer-desing.svg" alt="Foto de Jesús Cárdenas" />
+            </div>
+        </section>
 
-    <!--=======Skills Info Start ========-->
-    <section class="container">
-        <div class="titles">
-            <h2>Skills</h2>
-        </div>
+        <section id="habilidades" class="section container">
+            <h2 class="section-title" data-i18n="skills_title">Habilidades</h2>
             <div class="skills">
-                <div class="skill-info">
-                    <img src="img/icon-html.png" alt="html"/>
-                    <div class="description-skill">
-                        <h3>Html</h3>
-                        <span>Basico</span>
-                    </div>
-                </div>
-                <div class="skill-info">
-                    <img src="img/icon-css.png" alt="css"/>
-                    <div class="description-skill">
-                        <h3>Css</h3>
-                        <span>Basico</span>
-                    </div>
-                </div>
-                <div class="skill-info">
-                    <img src="img/icon-js.png" alt="js"/>
-                    <div class="description-skill">
-                        <h3>Javascript</h3>
-                        <span>Basico</span>
-                    </div>
-                </div>
-                <div class="skill-info">
-                    <img src="img/icon-java.png" alt="Java"/>
-                    <div class="description-skill">
-                        <h3>Java</h3>
-                        <span>Intermedio</span>
-                    </div>
-                </div>
-                <div class="skill-info">
-                    <img src="img/icons8-logotipo-de-primavera-64.png" alt="Java"/>
-                    <div class="description-skill">
-                        <h3>Spring Boot</h3>
-                        <span>Basico</span>
-                    </div>
-                </div>
-                <div class="skill-info">
-                    <img src="img/icons8-net-framework-64.png" alt="Java"/>
-                    <div class="description-skill">
-                        <h3>ASP .NET Core</h3>
-                        <span>Basico</span>
-                    </div>
-                </div>
-                <div class="skill-info">
-                    <img src="img/icons8-sql-64.png" alt="Java"/>
-                    <div class="description-skill">
-                        <h3>SQL</h3>
-                        <span>Intermedio</span>
-                    </div>
-                </div>
-                <div class="skill-info">
-                    <img src="img/icons8-estibador-64.png" alt="Java"/>
-                    <div class="description-skill">
-                        <h3>Docker</h3>
-                        <span>Basico</span>
-                    </div>
-                </div>
+                <div class="skill-info" data-tooltip=".NET Core" aria-label=".NET Core"><img src="img/icons8-net-framework-64.png" alt=".NET Core" /></div>
+                <div class="skill-info" data-tooltip="Spring Boot" aria-label="Spring Boot"><img src="img/icons8-logotipo-de-primavera-64.png" alt="Spring Boot" /></div>
+                <div class="skill-info" data-tooltip="FastAPI" aria-label="FastAPI"><img src="img/icon-fast.png" alt="FastAPI" /></div>
+                <div class="skill-info" data-tooltip="React" aria-label="React"><img src="img/icon-react.png" alt="React" /></div>
+                <div class="skill-info" data-tooltip="TypeScript" aria-label="TypeScript"><img src="img/icon-ts.png" alt="TypeScript" /></div>
+                <div class="skill-info" data-tooltip="JavaScript" aria-label="JavaScript"><img src="img/icon-js.png" alt="JavaScript" /></div>
+                <div class="skill-info" data-tooltip="HTML" aria-label="HTML"><img src="img/icon-html.png" alt="HTML" /></div>
+                <div class="skill-info" data-tooltip="CSS" aria-label="CSS"><img src="img/icon-css.png" alt="CSS" /></div>
+                <div class="skill-info" data-tooltip="SQL" aria-label="SQL"><img src="img/icons8-sql-64.png" alt="SQL" /></div>
+                <div class="skill-info" data-tooltip="Docker" aria-label="Docker"><img src="img/icons8-estibador-64.png" alt="Docker" /></div>
+                <div class="skill-info" data-tooltip="AWS" aria-label="AWS"><img src="img/icon-aws.png" alt="AWS" /></div>
+                <div class="skill-info" data-tooltip="Git y GitHub" aria-label="Git y GitHub"><img src="img/icon-github.png" alt="Git y GitHub" /></div>
             </div>
-    </section>
-    <!--=======Skills Info End ========-->
+        </section>
 
-    <!--=======Proyects Info Start ========-->
-    <section id="section-proyects" class="proyects">
-        <div class="titles">
-            <h2>Proyectos</h2>
-        </div>
-        <div class="cards-proyects">
-            <div class="card">
-                <img src="https://th.bing.com/th/id/R.266f735be62a04d11e455f022b994754?rik=amMzAXlNQq8hdg&pid=ImgRaw&r=0" alt="proyect-1">
-                <h4>Streaming</h4>
-                <p>Aplicacion de escritorio para servicio de streaming. </p>
-                <div>
-                    <a href="https://github.com/Jdcarsa/StreamingFinal" class="btn-card">Repositorio</a>
+        <section id="laboral" class="section container">
+            <h2 class="section-title" data-i18n="work_title">Experiencia Laboral</h2>
+            <article class="item item-plain">
+                <div class="item-head">
+                    <h3 data-i18n="work_role">Ingeniero de Software Junior — Finnovarisk</h3>
+                    <span>Sep 2025 - Abr 2026</span>
                 </div>
-            </div>
-            <div class="card">
-                    <img src="https://th.bing.com/th/id/OIP.KRQZpTTiz5qnt8HfQvGexAHaEd?rs=1&pid=ImgDetMain" alt="proyect-2">
-                    <h4>Academic Software</h4>
-                    <p>Aplicacion web para organizar horarios de una organizacion institucional</p>
-                    <div>
-                        <a href="https://github.com/Jdcarsa/Proyecto-Soft-lll" class="btn-card">Repositorio</a>
-                    </div>
-            </div>
-            <div class="card">
-                <img src="https://th.bing.com/th/id/OIP.SNNemLBe8-s00PTLZY4tIAHaE8?rs=1&pid=ImgDetMain" alt="proyect-3">
-                <h4>Pharmacy Software</h4>
-                <p>Aplicacion de una farmacia, para venta de medicamentos, manejo de usuarios y pacientes</p>
-                <div>
-                    <a href="https://github.com/Jdcarsa/Pharmacy-Software" class="btn-card">Repositorio</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://www.valuekids.es/images/PMR_hombre_empujando_carro_compra.jpg" alt="proyect-4">
-                <h4>Smart Consumtion</h4>
-                <p>Aplicacion realizada con microservicios para reseñas de productos sostenibles</p>
-                <div>
-                    <a href="https://github.com/smart-consumption/deployement" class="btn-card">Repositorio</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://previews.123rf.com/images/ideyweb/ideyweb1708/ideyweb170800101/83943769-technology-platform-cloud-storage-network-business-financial-and-innovative-platform.jpg" alt="proyect-5">
-                <h4>Frontend - Plataforma Tecnológica del Departamento de Ingeniería Ambiental FIC</h4>
-                <div>
-                    <a href="https://github.com/fachaunicauca/ambientapp" class="btn-card">Repositorio</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://emotion-lab.es/wp-content/uploads/2024/01/elementos-aprendizaje-cooperativo.jpg" alt="proyect-6">
-                <h4>Child Programming</h4>
-                <p>Plataforma educativa para la gestión y evaluación de equipos en programación infantil.</p>
-                <div>
-                    <a href="https://github.com/PortillaXpert/Child-Programming" class="btn-card">Repositorio</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--=======Proyects Info End ========-->
+                <ul>
+                    <li data-i18n="work_1">Automaticé cálculos y procesos internos con Python, reduciendo tiempos operativos y errores manuales.</li>
+                    <li data-i18n="work_2">Desarrollé una aplicación web para registro de pacientes y gestión de visitas médicas con React + Spring Boot.</li>
+                    <li data-i18n="work_3">Diseñé y desarrolló una plataforma Fintech en .NET, integrando APIs externas, despliegue en AWS y pruebas de despliegue con Docker.</li>
+                </ul>
+            </article>
+        </section>
 
-    <!--=======Contac-me Start ========-->
-    <footer id="section-contact" class="container">
-        <div class="container-1">
-                <div class="social-net">
-                    <h2 class="contac">Contacto </h2>
-                    <ul>
-                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
-                        
-                        <li><a href="https://www.linkedin.com/in/jesus-david-cardenas-sandoval-a368652b6/"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                    </ul>
-                    <span class="credits"></span>
+        <section id="estudios" class="section container">
+            <h2 class="section-title" data-i18n="studies_title">Estudios</h2>
+            <article class="item item-plain">
+                <div class="item-head">
+                    <h3 data-i18n="studies_degree">Ingeniería de Sistemas</h3>
+                    <span>2021 - 2026</span>
                 </div>
-                <div class="contac-me"> 
-                    <form id='form' action="https://formspree.io/f/xrgwzdgl"
-                    method="POST">
-                            <h3 class="name">Envia un Correo</h3>
-                            <div class="input">
-                                <input type="text" name="name" id="name" class="input-text" placeholder="Name:">
-                                </input>
-                            </div>
-                            <div class="input">
-                                <input type="text" name="email" id="email" class="input-text" placeholder="Email:"></input>
-                                <span class="message-error">Invalid Email</span>
-                            </div>
-                            <div class="input">
-                                <textarea id="message" name="message" class="message"  placeholder="Message:"></textarea>
-                            </div>
-                            <input type="submit" class="btn-send" value="Send"/>
-                    </form>
+                <p data-i18n="studies_desc">Formación enfocada en desarrollo de software, estructuras de datos y diseño de soluciones tecnológicas.</p>
+            </article>
+        </section>
+
+        <section id="academica" class="section container">
+            <h2 class="section-title" data-i18n="academic_title">Experiencia Académica</h2>
+            <article class="item item-plain">
+                <div class="item-head">
+                    <h3 data-i18n="academic_1_title">Desarrollador Frontend — Pasantía Empresarial</h3>
+                    <span>Feb 2025 - Jun 2025</span>
                 </div>
+                <p data-i18n="academic_1_desc">Desarrollé un módulo de evaluación en Next.js con visualización de documentos y pruebas, consumiendo APIs backend.</p>
+            </article>
+            <article class="item item-plain">
+                <div class="item-head">
+                    <h3 data-i18n="academic_2_title">Plataforma educativa para programación infantil</h3>
+                    <span>Oct 2025 - Ene 2026</span>
+                </div>
+                <p data-i18n="academic_2_desc">Implementé un subsistema para gestión de misiones y equipos, integrado con el módulo de tareas existente.</p>
+            </article>
+        </section>
+
+        <section id="proyectos" class="section container">
+            <h2 class="section-title" data-i18n="projects_title">Proyectos</h2>
+            <div class="project-grid">
+                <article class="project-card">
+                    <img src="img/fintech.png" alt="Proyecto Fintech" />
+                    <h3 data-i18n="project_1_title">Plataforma Fintech (.NET)</h3>
+                    <p data-i18n="project_1_desc">Plataforma financiera con integración de APIs externas y despliegue cloud.</p>
+                </article>
+                <article class="project-card">
+                    <img src="img/visitas-medicas.png" alt="Proyecto visitas médicas" />
+                    <h3 data-i18n="project_2_title">Gestión de visitas médicas (React + Spring Boot)</h3>
+                    <p data-i18n="project_2_desc">Registro de pacientes y trazabilidad clínica con API REST y base de datos relacional.</p>
+                </article>
+                <article class="project-card">
+                    <img src="img/Imagen2.png" alt="Proyecto módulo de evaluación" />
+                    <h3 data-i18n="project_3_title">Módulo de evaluación frontend (Next.js)</h3>
+                    <p data-i18n="project_3_desc">Visualización de documentos y pruebas conectadas a servicios backend.</p>
+                </article>
+                <article class="project-card">
+                    <img src="img/childprogramming.png" alt="Proyecto educación infantil" />
+                    <h3 data-i18n="project_4_title">Plataforma educativa de programación infantil (React + Spring Boot)</h3>
+                    <p data-i18n="project_4_desc">Gestión de misiones y equipos para mejorar la coordinación de actividades.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacto" class="footer">
+        <div class="container footer-inner">
+            <h2 data-i18n="contact_title">Contacto</h2>
+            <p class="contact-subtitle" data-i18n="contact_subtitle">Si quieres trabajar conmigo, escríbeme directamente:</p>
+            <div class="contact-actions">
+                <a class="contact-pill" href="mailto:jdcardenasvld@hotmail.com?subject=Contacto%20desde%20portafolio">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span data-i18n="contact_email">Enviar correo</span>
+                </a>
+                <a class="contact-pill" href="https://wa.me/573155588233" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span data-i18n="contact_whatsapp">Contactar por WhatsApp</span>
+                </a>
+            </div>
+            <small id="copyright"></small>
         </div>
     </footer>
-    <!--=======Contac-me End ========-->
 
+    <script src="https://kit.fontawesome.com/84f049e180.js" crossorigin="anonymous"></script>
+    <script src="Javascript/Script.js"></script>
 </body>
-<!--=======JS FILES ========-->
-<script src="https://kit.fontawesome.com/84f049e180.js" crossorigin="anonymous"></script>
-<script type="text/javascript" src="Javascript/Script.js"></script>
 </html>
